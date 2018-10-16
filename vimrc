@@ -11,7 +11,7 @@ set encoding=utf-8
 " show coords of cursor in the status bar
 set ruler
 syntax on                           " syntax highlighing
-autocmd BufRead,BufNewFile *.md set syntax=off " turn it off for markdown files, since it works poorly
+" autocmd BufRead,BufNewFile *.md set syntax=off " turn it off for markdown files, since it works poorly
 filetype on                          " try to detect filetypes
 filetype plugin on
 filetype plugin indent on    " enable loading indent file for filetype
@@ -85,3 +85,8 @@ autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 expandtab
 " don't use a background color when highlighting matching parantheses, since
 " otherwise it's hard to see where the cursor is
 hi MatchParen cterm=none ctermbg=none ctermfg=green
+
+" shortcuts for inserting and deleting blank lines
+" Ctrl-j/k inserts blank lines below/above.
+nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
