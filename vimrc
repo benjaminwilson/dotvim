@@ -27,9 +27,9 @@ autocmd FileType c setlocal shiftwidth=2 tabstop=2
 " highlight the current line and column
 " turn off cursorline for text and markdown, as it impedes reading!
 set cursorline
-autocmd BufRead,BufNewFile *.md setlocal nocursorline
-autocmd BufRead,BufNewFile *.txt setlocal nocursorline
-autocmd BufRead,BufNewFile *.tex setlocal nocursorline
+autocmd BufEnter,BufRead,BufNewFile *.md setlocal nocursorline
+autocmd BufEnter,BufRead,BufNewFile *.txt setlocal nocursorline
+autocmd BufEnter,BufRead,BufNewFile *.tex setlocal nocursorline
 
 " can exit insert mode without leaving the 'home row' of the keyboard
 imap jk <Esc>
@@ -88,5 +88,6 @@ hi MatchParen cterm=none ctermbg=none ctermfg=green
 
 " shortcuts for inserting and deleting blank lines
 " Ctrl-j/k inserts blank lines below/above.
-nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
-nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+" FIXME we already use these key combinations for window navigation
+"nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+"nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
