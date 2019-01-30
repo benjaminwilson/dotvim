@@ -11,15 +11,15 @@ set encoding=utf-8
 " show coords of cursor in the status bar
 set ruler
 syntax on                           " syntax highlighing
-" autocmd BufRead,BufNewFile *.md set syntax=off " turn it off for markdown files, since it works poorly
+autocmd BufRead,BufNewFile *.md set syntax=off " turn it off for markdown files, since it works poorly
 filetype on                          " try to detect filetypes
 filetype plugin on
 filetype plugin indent on    " enable loading indent file for filetype
 
 " html, css, js indentation
-autocmd FileType html setlocal shiftwidth=4 tabstop=4
-autocmd FileType css setlocal shiftwidth=4 tabstop=4
-autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType css setlocal shiftwidth=2 tabstop=2 expandtab
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
 
 " c
 autocmd FileType c setlocal shiftwidth=2 tabstop=2
