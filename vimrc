@@ -91,3 +91,5 @@ hi MatchParen cterm=none ctermbg=none ctermfg=green
 " FIXME we already use these key combinations for window navigation
 "nnoremap <silent><C-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
 "nnoremap <silent><C-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
+
+set shortmess=I
