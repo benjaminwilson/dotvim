@@ -82,6 +82,9 @@ autocmd FileType php setlocal sts=4 ts=4 sw=4 expandtab
 " C++ files use four space indentation
 autocmd FileType cpp setlocal shiftwidth=4 tabstop=4 expandtab
 
+" no indentation for tex files
+autocmd FileType tex setlocal indentexpr=
+
 " don't use a background color when highlighting matching parantheses, since
 " otherwise it's hard to see where the cursor is
 hi MatchParen cterm=none ctermbg=none ctermfg=green
