@@ -1,0 +1,9 @@
+/* Change the background colours of Jupyter VIM */
+/* Jupyter cell is in normal mode */
+.edit_mode .cell.selected .CodeMirror-focused.cm-fat-cursor {
+  background-color: #F5F6EB !important;
+}
+/* Jupyter cell is in insert mode */
+.edit_mode .cell.selected .CodeMirror-focused:not(.cm-fat-cursor) {
+  background-color: #E6EBF6 !important;
+}
