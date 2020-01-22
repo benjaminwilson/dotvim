@@ -12,3 +12,14 @@ jupyter core     : 4.6.1
 jupyter-notebook : 6.0.2
 ...
 ```
+
+## Dark theme
+
+... not VIM related, but:
+
+```bash
+conda install -c conda-forge jupyterthemes
+jt -t chesterish
+```
+
+See [here](https://github.com/dunovank/jupyter-themes).
